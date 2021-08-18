@@ -4,7 +4,7 @@ Frontend application with installer package to control via RS-232 the Yaesu FT-8
 
 This application for the remote control and operation of the Yaesu FT-840 transceiver was initally developed in year 2001 with Visual Basic 6.0. 
 It requires a serial port to TTL interface like the MAX232. The latest change was the adding of a bargraph meter to meassure the incomming RX 
-signal and TX power.
+signal and TX power output.
 
 After installation please select an available serial port. 
 
