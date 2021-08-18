@@ -23,7 +23,8 @@ This tutorial covers the main code procedures used in the CAT controller app tha
 A cheap option to build is the TTL to RS232 signals converter integrated circuit MAX232. The CAT interface is very easy to build so I strongly recommend to do it yourself.
 
 The C.A.T. (Computer Aided Transceiver) protocol provides complete control from a PC. Operations such TX/RX mode selection, frequency input, memory storage and retrieve, transceiver status data dump and others functions are available. All the commands sent to the equipment consist of blocks of five bytes. The last byte sent in each block is the instruction opcode and previous four bytes the arguments. 
-Below is an command block example that set the "AM wide reception" operation "MODE" on the transceiver: 
+Below is an command block example that set the "AM wide reception" operation "MODE" on the transceiver:
+
 MSComm1.Output = Chr$(0)
 MSComm1.Output = Chr$(0)
 MSComm1.Output = Chr$(0)
@@ -136,3 +137,4 @@ MCI.UpdateInterval = 100
 End Sub
  
 In this brief tutorial the most important sections of the code in Visual Basic 6 are covered. Of course the program can be improved adding for example a menu plus a small database for the storage of memories and CQ contacts, etc. The core functions for I/O remote operation are completed and operational. Also the application is working without critical issues, an important aspect in software development. Of course adding more functions and features is my next task. How to resolve the data and parameters conversions on the project under Visual Basic 6 using Yaesu CAT protocol interface was the objective.
+
