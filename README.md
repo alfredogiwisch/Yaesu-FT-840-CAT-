@@ -12,7 +12,7 @@ I don`t tested the application with a USB to serial cable but I think it would w
 
 In the files there is a schematoic of the TTL to RS232 interface using the MAX 232 chip.
 
-For more technicla information information please visit my blog 
+For technical information please visit my blog at:
 
 http://alfredoblogspage.blogspot.com/2007/05/yaesu-ft-840-cat-controller-code.html
 
