@@ -1,12 +1,11 @@
 # Yaesu-FT-840-CAT-
 
-Frontend application with installer package to control via RS-232 the Yaesu FT-840 transceiver
+Frontend application programmed in Visual Basic 6.0 with installer package to control via RS-232 the Yaesu FT-840 transceiver
 
-This application for the remote control and operation of the Yaesu FT-840 transceiver was initally developed in year 2001 with Visual Basic 6.0. 
-It requires a serial port to TTL interface like the MAX232. The latest change was the adding of a bargraph meter to meassure the incomming RX 
-signal and TX power output.
+This application programmed in Visual Basic 6.0 for the remote control and operation of the Yaesu FT-840 transceiver was initally developed in year 200. I added a bargraph meter to test the dump data mode data in year 2007. 
+It requires a serial port to TTL interface like the MAX232. The bargraph meter meassures the incomming RX signal and TX power output.
 
-After installation please select an available serial port. 
+There is an installation .EXE file with the required libraries and DLL files in a .CAB file. After installation please select an available serial port. 
 
 I don`t tested the application with a USB to serial cable but I think it would work because the drivers are PNP compatible with RS-232 standards.
 
