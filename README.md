@@ -5,7 +5,7 @@ Frontend application programmed in Visual Basic 6.0 with installer package to co
 This application programmed in Visual Basic 6.0 for the remote control and operation of the Yaesu FT-840 transceiver was initally developed in year 2001. I added a bargraph meter to test the dump data mode in year 2007. 
 It requires a serial port to TTL interface like the MAX232. The bargraph meter meassures the incomming RX signal in decibels and TX power output in watts.
 
-There is an installation .EXE file with the required libraries and DLL files in a .CAB file. After installation please select an available serial port. Unfortunatelly I don`t find the source files from year 2007 with the latest changes but the initial release from year 2001 is included in a .ZIP file.
+There is an installation .EXE file with the required libraries and DLL files in a .CAB file. After installation please select an available serial port. Unfortunatelly I don`t find the source files from year 2007 with the latest changes but the initial release from year 2001 is included in a .ZIP file. I will try to find the latest backup.
 
 I don`t tested the application with a USB to serial cable but I think it would work because the drivers are PNP compatible with RS-232 standards.
 
