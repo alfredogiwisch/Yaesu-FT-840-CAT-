@@ -18,11 +18,14 @@ http://alfredoblogspage.blogspot.com/2007/05/yaesu-ft-840-cat-controller-code.ht
 
 How it works:
 
-This tutorial covers the main code procedures used in the CAT controller app that I have developed under Visual Basic 6. The Yaesu FT-840 is a communication equipment that covers the Ham Radio HF bands (160, 80, 40, 20, 15, 10 meters). It use the RS232 serial port for connection to a computer. The equipment I/O serial port level is TTL +5V, however a TTL to RS232 converter is necessary because on a PC the levels are +-12V. 
+This tutorial covers the main code procedures used in the CAT controller app that I have developed under Visual Basic 6. The Yaesu FT-840 is a communication equipment that covers the Ham Radio HF bands (160, 80, 40, 20, 15, 10 meters). It use the RS232 serial port for connection to a computer. 
 
-A cheap option to build is the TTL to RS232 signals converter integrated circuit MAX232. The CAT interface is very easy to build so I strongly recommend to do it yourself.
+There are a total of 24 instructions opcodes available for the Yaesu FT-840. The computer program must construct a 5 byte command block providing dummy arguments for padding. The first four bytes are arguments and the last byte the instruction opcode. The resulting five bytes are sent to the transceiver via RS232 serial interface. The computer serial port must be set for 4800 baud's, 8 bits data and 2 stop bits with no parity to send or receive data. In case of slow computers there is a pacing command available for delay generation but this is useful only for very old computers. Today a serial speed of 4800 baud's is to slow for a Intel Pentium or AMD fast computer because the application must wait to receive the dump of data, in other words the Yaesu FT-840 on board processor is maybe a bit slow. In the program that I have written the serial port is read using the polling method and a timer to update the status (meter incoming signal and power output update block). Sending a command is very fast in response but not the same happens when receiving a data dump due the slow response of the reading proces and the slow response of the serial RS232 interface at 9600 bauds.
+
+The equipment I/O serial port level is TTL +5V, however a TTL to RS232 converter is necessary because on a PC the levels are +-12V. A cheap option to build is the TTL to RS232 signals converter integrated circuit MAX232. The CAT interface is very easy to build so I strongly recommend to do it yourself.
 
 The C.A.T. (Computer Aided Transceiver) protocol provides complete control from a PC. Operations such TX/RX mode selection, frequency input, memory storage and retrieve, transceiver status data dump and others functions are available. All the commands sent to the equipment consist of blocks of five bytes. The last byte sent in each block is the instruction opcode and previous four bytes the arguments. 
+
 Below is an command block example that set the "AM wide reception" operation "MODE" on the transceiver:
 
 MSComm1.Output = Chr$(0)
