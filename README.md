@@ -9,7 +9,7 @@ There is an installation .EXE file with the required libraries and DLL files in 
 
 I don`t tested the application with a USB to serial cable but I think it would work because the drivers are PNP compatible with RS-232 standards.
 
-In the files there is a schematoic of the TTL to RS232 interface using the MAX 232 chip.
+In the files there is a schematic of the TTL to RS232 interface using the MAX 232 chip.
 
 For technical information please visit my blog at:
 
