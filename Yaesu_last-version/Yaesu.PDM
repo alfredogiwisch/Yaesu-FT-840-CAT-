@@ -1,0 +1,108 @@
+[Root]
+Most Recent Package=FT-840 CAT Controller
+
+
+[Package|FT-840 CAT Controller|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Yaesunuevo\Paquetefinal1
+
+[Package|FT-840 CAT Controller|Configure DAO ISAMs]
+Applicable=No
+
+[Package|FT-840 CAT Controller|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|FT-840 CAT Controller|Files Found]
+
+[Package|FT-840 CAT Controller|Files Released]
+
+[Package|FT-840 CAT Controller|Missing Dependency Information]
+C:\WINDOWS\system32\msstdfmt.dll=
+
+[Package|FT-840 CAT Controller|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\mscomctl.ocx=
+
+[Package|FT-840 CAT Controller|Files Added]
+
+[Package|FT-840 CAT Controller|Files Removed]
+
+[Package|FT-840 CAT Controller|Files In Project]
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\VB6ES.DLL=Yes
+C:\WINDOWS\system32\MSCOMM32.OCX=Yes
+C:\WINDOWS\system32\MSCOMES.DLL=Yes
+C:\WINDOWS\system32\msstdfmt.dll=Yes
+C:\WINDOWS\system32\MCI32.OCX=Yes
+C:\WINDOWS\system32\MCIES.DLL=Yes
+C:\WINDOWS\system32\mscomctl.ocx=Yes
+C:\WINDOWS\system32\MSCMCES.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Yaesunuevo\FT840CAT.exe=Yes
+
+[Package|FT-840 CAT Controller|Configure Registry Files]
+Applicable=No
+
+[Package|FT-840 CAT Controller|Configure Remote Servers]
+Applicable=No
+
+[Package|FT-840 CAT Controller|Install Locations]
+C:\Yaesunuevo\FT840CAT.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB6ES.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMM32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMES.DLL=$(WinSysPath)
+C:\WINDOWS\system32\msstdfmt.dll=$(WinSysPath)
+C:\WINDOWS\system32\MCI32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MCIES.DLL=$(WinSysPath)
+C:\WINDOWS\system32\mscomctl.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCMCES.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Yaesunuevo\FT-840CAT.exe=$(AppPath)
+
+[Package|FT-840 CAT Controller|Configure Shared Files]
+Applicable=Yes
+C:\Yaesunuevo\FT840CAT.exe=Yes
+C:\Yaesunuevo\FT-840CAT.exe=Yes
+
+[Package|FT-840 CAT Controller|Distribution]
+Type=single
+Size=
+Title=FT-840 CAT Controller
+
+[Package|FT-840 CAT Controller|IconGroups]
+Group0=FT-840 CAT Controller
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|FT-840 CAT Controller|FT-840 CAT Controller]
+Icon1=FT840CAT.exe
+Title1=FT-840 CAT Controller
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|FT-840 CAT Controller|Package]
+PackageFolder=C:\Yaesunuevo\Paquetefinal1
+ProjectFolder=C:\Yaesunuevo
+ServerSideCab=
+File1=C:\Yaesunuevo\Paquetefinal1\setup.exe
+File2=C:\Yaesunuevo\Paquetefinal1\Setup.Lst
+File3=C:\Yaesunuevo\Paquetefinal1\FT840CAT.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
