@@ -129,7 +129,7 @@ End If
 End If
 
  
-The numeric data conversions below is the key procedure of the program to convert txtNumero variable to the CAT protocol format accepted by the trasnceiver. The procedure use numerical functions for example the val function to return the numeral part of a string. The use of the functions left$, mid$, right$ split the string chain because the parameters for frequency operation need to be separated into 2 digit blocks to build the four bytes argument required in the CAT protocol. The last five instructions send the argument result and the command instruction in CAT protocol format to the Yaesu FT-840 transceiver. 
+The numeric data conversions below is the key procedure of the program to convert txtNumero variable to the CAT protocol format accepted by the transceiver. The procedure use numerical functions for example the val function to return the numeral part of a string. The use of the functions left$, mid$, right$ split the string chain because the parameters for frequency operation need to be separated into 2 digit blocks to build the four bytes argument required in the CAT protocol. The last five instructions send the argument result and the command instruction in CAT protocol format to the Yaesu FT-840 transceiver. 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
